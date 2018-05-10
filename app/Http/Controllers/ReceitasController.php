@@ -31,9 +31,6 @@ class ReceitasController extends Controller
 
    public function store(Request $request)
     {
-    	return response()->json([
-                'message'   => 'Record not found',
-            ], 404);
         $receitas = new Receita();
         $receitas->fill($request->all());
         $receitas->save();

@@ -65,6 +65,9 @@ class ReceitasController extends Controller
         }
 
         $receitas->delete();
+        return response()->json([
+                'message'   => 'excluido',
+            ], 404);
     }
 }
 

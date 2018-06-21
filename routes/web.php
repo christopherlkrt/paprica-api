@@ -17,7 +17,10 @@ Route::group(array('prefix' => 'api'), function()
   Route::get('/', function () {
       return response()->json(['message' => 'Receitas API', 'status' => 'Connected']);;
   });
-
+  
+Route::get('/client', function () {
+    return view('client');
+});
   Route::resource('receitas', 'ReceitasController');
   Route::post('receitas', 'ReceitasController@store');
 
@@ -26,3 +29,5 @@ Route::group(array('prefix' => 'api'), function()
 Route::get('/', function () {
     return redirect('api');
 });
+
+

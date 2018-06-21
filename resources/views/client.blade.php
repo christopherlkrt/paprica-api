@@ -11,7 +11,7 @@
 	</div>
 
 	<div>
-		Examples: 
+		Exemplos: 
 		<div>request('receitas', 'GET', {})</div>
 		<div>request('receitas/2', 'GET', {})</div>		
 		request('receitas', 'POST', {
